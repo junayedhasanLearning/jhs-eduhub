@@ -1,0 +1,138 @@
+@media (width <= 1400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (width <= 1220px) {
+  .section-why--choose .grid {
+    & .choose-left--div {
+      padding-right: 1rem;
+    }
+    & .choose-right--div {
+      padding-left: 1rem;
+    }
+  }
+}
+@media (width <= 1200px) {
+  html {
+    font-size: 54%;
+  }
+}
+@media (width <= 1151px) {
+  .hero-btn {
+    margin-bottom: 4.2rem;
+  }
+  :is(.section-course, .section-blog) .grid-four--cols {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media (width <= 1101px) {
+  .choose-center--div figure::before,
+  .choose-center--div figure::after {
+    display: none;
+  }
+  .section-why--choose .grid {
+    gap: 4.5rem;
+    & .choose-center--div {
+      order: 1;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    & .choose-left--div {
+      padding-right: 0px;
+      order: 2;
+      & .why-choose--div {
+        margin-left: 1rem;
+      }
+    }
+    & .choose-right--div {
+      padding-left: 0px;
+      order: 3;
+      & .why-choose--div {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .section-contact .grid-two--cols {
+    grid-template-columns: 1fr;
+    & .contact-map iframe {
+      width: 100%;
+    }
+  }
+}
+@media (width <= 900px) {
+  .contact-content {
+    & p {
+      font-size: 1.5rem;
+    }
+    & .contact-title {
+      font-size: 2rem;
+    }
+  }
+  footer .grid-four--cols {
+    text-align: left;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    & .footer-1--div {
+      margin-top: 6.4rem;
+      grid-area: 2 / 1 / 3 / -1;
+    }
+  }
+}
+@media (width <= 860px) {
+  .section-hero .grid-two--cols {
+    grid-template-columns: 1fr;
+    & .section-hero--content {
+      margin-bottom: 4.2rem;
+      order: 2;
+    }
+    & .section-hero--image figure img {
+      width: 50%;
+      order: 1;
+    }
+  }
+  .section-about .grid-three--cols {
+    grid-template-columns: 1fr;
+  }
+}
+@media (width <= 821px) {
+  .section-contact--homepage .grid-two--cols {
+    grid-template-columns: 1fr;
+    & .contact-image {
+      order: 1;
+      text-align: center;
+      & img {
+        width: 75%;
+      }
+    }
+    & .contact-content {
+      order: 2;
+      & .btn {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (width <= 800px) {
+  .section-why--choose .grid-three--cols {
+    grid-template-columns: 1fr;
+    & .choose-left--div .why-choose--div {
+      align-items: start;
+      text-align: left;
+    }
+    & .choose-center--div figure img {
+      width: 50%;
+    }
+  }
+}
+@media (width <= 685px) {
+  .section-navbar .container {
+    flex-direction: column;
+    & .navbar-brand {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
